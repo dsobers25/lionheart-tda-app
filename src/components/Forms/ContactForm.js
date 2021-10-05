@@ -74,8 +74,9 @@ const ContactForm = () => {
                   </IconContext.Provider>
                   <FormRightHeader>GET IN TOUCH</FormRightHeader>
                   <FormRightItemHeader>Address: </FormRightItemHeader><FormRightText>3200 Aluma Valley Dr, Oklahoma City, OK 73121</FormRightText>
-                  <FormRightItemHeader>Phone: </FormRightItemHeader><FormRightText>(405) 254-5556</FormRightText>
-                  <FormRightItemHeader>Email: </FormRightItemHeader><FormRightText>support@lionhearttda.com</FormRightText>
+                  <FormRightItemHeader>Phone #1: </FormRightItemHeader><FormRightText>(405) 999-8773</FormRightText>
+                  <FormRightItemHeader>Phone #2: </FormRightItemHeader><FormRightText>(405) 655-4038</FormRightText>
+                  <FormRightItemHeader>Email: </FormRightItemHeader><FormRightText>lionheartdrivingacademy@gmail.com</FormRightText>
                   </FormRightCol>
                 </FormRight>
                 </FormArranger>

@@ -7,7 +7,10 @@ import {animateScroll as scroll} from 'react-scroll';
 const validationSchema = yup.object().shape({
     job_app: yup.object().shape({
         personal: yup.object().shape({
-            first_name: yup.string().min(2).required().label('Must have at least 2 characters'),
+            first_name: yup.string().min(2).required('Required').label('First Name: '),
+            last_name: yup.string().min(2).required('Required').label('Last Name: '),
+            ssn_sin: yup.number().required('Required').label('SSN: '),
+            date_of_birth: yup.string().required('Required').label('Date Of Birth: '),
             // date_of_birth: yup.date().required('Required').nullable()
  })
 })
@@ -54,22 +57,31 @@ const StepThree = ({ next, prev, data }) => {
                         </div>
                         <div>
                         <p>Last Name</p>
+                        <ErrorMessage name="job_app.personal.last_name">
+                        { msg => <div style={{ color: 'red' }}>{msg}</div>} 
+                        </ErrorMessage>
                         </div>
                         <div>
                         <Field name="job_app.personal.last_name" />
                         </div>
                         <div>
                         <p>SSN/SIN</p>
+                        <ErrorMessage name="job_app.personal.ssn_sin">
+                        { msg => <div style={{ color: 'red' }}>{msg}</div>} 
+                        </ErrorMessage>
                         </div>
                         <div>
                         <Field name="job_app.personal.ssn_sin" />
                         </div>
                         <div>
                         <p>Date of Birth (mm/dd/yyyy)</p>
+                        <ErrorMessage name="job_app.personal.date_of_birth">
+                        { msg => <div style={{ color: 'red' }}>{msg}</div>} 
+                        </ErrorMessage>
                         </div>
                         <div>
                         {/* <Field name='job_app.personal.date_of_birth' values='personal_info.personal.date_of_birth' component={DatePickerField} /> */}
-                        <Field name="job_app.personal.date_of_birth" placeholder="enter full date of birth"/>
+                        <Field name="job_app.personal.date_of_birth" placeholder="MM/DD/YYY"/>
                         </div>
                         </div>
                         <div>
@@ -90,7 +102,11 @@ const StepThree = ({ next, prev, data }) => {
                             <p>Country</p>
                             </div>
                             <div>
-                            <Field name="job_app.address.country"/>
+                            <Field name="job_app.address.country" as="select">
+                                <option value="United States" label="United States" />
+                                <option value="Other" label="Other" />
+                            </Field>
+                            <Field name="job_app.address.other_country" placeholder="Other Country Name"/>
                             </div>
                             <div>
                             <p>City</p>

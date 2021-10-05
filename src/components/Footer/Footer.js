@@ -40,7 +40,8 @@ const Footer = () => {
                         </IconContext.Provider>
                         <FooterLinkTitle>Location?</FooterLinkTitle>
                         <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>3200 Aluma Valley Dr, Oklahoma City, OK 73121</FooterLink>
-                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>(405) 254-5556</FooterLink>
+                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>(405) 999-8773</FooterLink>
+                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>(405) 655-4038</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>FEED YOUR LION</FooterLinkTitle>
