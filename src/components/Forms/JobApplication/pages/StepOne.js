@@ -20,7 +20,7 @@ export const StepOne = ({ next, data }) => {
         </div>
         <div>To fill out this form, you will need to know the following:</div>
         <ul>
-        <li>Social Security Number</li>
+            <li>Social Security Number</li>
             <li>Home address history for the past 3 years</li>
             <li>Current driver license number and driver license history for the past 3 years</li>
             <li>Employment history up to 10 years</li>

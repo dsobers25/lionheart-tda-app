@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
+import {animateScroll as scroll} from 'react-scroll';
 
 const StepTwo = ({ next, prev, data }) => {
     const handleSubmit = (values) => {
@@ -16,12 +17,16 @@ const StepTwo = ({ next, prev, data }) => {
                     <Form>
         <div>
             <h2>Requirements</h2>
-            <p>To qualify with American Truck Training, you must meet the following criteria:</p>
+            <p>To qualify with Lion Heart Truck Driving Academy Training, you must meet the following criteria:</p>
             <ul>
                 <li>Must be at least 18 years of age</li>
             </ul>
         </div>
-        <button type='button' onClick={() => prev(values)}>Back</button>
+        <button type='button' onClick={() =>{
+                            scroll.scrollToTop();
+                            prev(values);
+                            
+                        }}>Back</button>
         <button type='submit'>Next</button>
         </Form>
         )}

@@ -28,26 +28,23 @@ const Footer = () => {
 
     return (
         <FooterContainer>
-            {/* <FooterSubscription>
-            </FooterSubscription> */}
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                 <FooterLinksItems>
                         <FooterLinkTitle>ABOUT US</FooterLinkTitle>
-                        <FooterLink to='/contact'>At Lion Heart Truck Driving Academy we privde you with all the skills necessary to earn your CDL in as little as 4 weeks!</FooterLink>
+                        <FooterLink to='/' onClick={() => scroll.scrollTo(1120)}>At Lion Heart Truck Driving Academy we privde you with all the skills necessary to earn your CDL in as little as 4 weeks!</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <IconContext.Provider value={{ color: '#A02D2B', size: 64 }}>
                         <MdLocationOn />
                         </IconContext.Provider>
                         <FooterLinkTitle>Location?</FooterLinkTitle>
-                        <FooterLink to='/contact'>We are local to Oklahoma City</FooterLink>
-                        <FooterLink to='/contact'>3200 Aluma Valley Dr, Oklahoma City, OK 73121</FooterLink>
-                        <FooterLink to='/contact'>(405) 254-5556</FooterLink>
+                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>3200 Aluma Valley Dr, Oklahoma City, OK 73121</FooterLink>
+                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>(405) 254-5556</FooterLink>
                     </FooterLinksItems>
                     <FooterLinksItems>
                         <FooterLinkTitle>FEED YOUR LION</FooterLinkTitle>
-                        <FooterLink to='/contact'>Discover the Lion Heart Difference with hands-on training and guidence rom seasoned professionals</FooterLink>
+                        <FooterLink to='/contact' onClick={() => scroll.scrollToTop()}>Discover the Lion Heart Difference with hands-on training and guidence rom seasoned professionals</FooterLink>
                     </FooterLinksItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>

@@ -49,8 +49,8 @@ export const PricingContainer = styled.div`
 export const PricingCard = styled.div`
   background: #242424;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
-  width: 30%;
-  height: 500px;
+  width: auto;
+  height: auto;
   text-decoration: none;
   border-radius: 4px;
 
@@ -82,7 +82,7 @@ export const PricingCardIcon = styled.div`
 
 export const PricingCardPlan = styled.h3`
   /* margin-bottom: 25px; */
-  margin: 4.5rem auto;
+  margin: 1rem auto;
   width: 90%;
   font-size: 30px;
   border-bottom: 2px solid transparent;

@@ -18,7 +18,6 @@ export const InfoSection = ({
     primary, 
     sectionOneImg, 
     imgStart, 
-    lightTopLine, 
     lightTextDesc, 
     buttonLabel, 
     description, 

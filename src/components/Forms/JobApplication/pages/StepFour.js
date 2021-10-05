@@ -1,15 +1,15 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import { StyledButton, StyledJobFormWrapper } from '../../Form.elements'
+import {animateScroll as scroll} from 'react-scroll';
 
 const StepFour = ({ next, prev, data }) => {
     const handleSubmit = (values) => {
         console.log(values);
-        next(values, true);
+        next(values, false);
     }
     return (
         <>
-        
         <Formik 
             initialValues={data} 
             onSubmit={handleSubmit}>
@@ -115,8 +115,11 @@ const StepFour = ({ next, prev, data }) => {
                             <Field name="job_app.personal_references.sec_ref"/>
                         </div>
                         </div>
-                        <StyledButton type='button' onClick={() => prev(values)}>Back</StyledButton>
-                        <StyledButton type='submit'>Submit</StyledButton>
+                        <StyledButton type='button' onClick={() => {
+                            scroll.scrollToTop();
+                            prev(values);
+                        }}>Back</StyledButton>
+                        <StyledButton type='submit' onClick={() =>scroll.scrollToTop()}>Next</StyledButton>
         </Form>
         </StyledJobFormWrapper>
         )}

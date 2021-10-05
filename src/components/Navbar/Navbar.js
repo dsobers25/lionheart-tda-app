@@ -77,11 +77,11 @@ const Navbar = () => {
                         </NavItem>
                         <NavItemBtn>
                             {button ? (
-                                <NavBtnLink to='/contact'>
+                                <NavBtnLink to='/contact' onClick={() => scroll.scrollTo(600)}>
                                     <Button primary>Contact <VscMail size={28} color='#000'/></Button>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to='/contact' >
+                                <NavBtnLink to='/contact' onClick={() => scroll.scrollTo(700)}>
                                     <Button fontBig primary>
                                     Contact <VscMail size={28} color='#000'/>
                                     </Button>
@@ -90,11 +90,11 @@ const Navbar = () => {
                         </NavItemBtn>
                         <NavItemBtn>
                             {button ? (
-                                <NavBtnLink to='/apply'>
+                                <NavBtnLink to='/apply' onClick={() => scroll.scrollToTop()} >
                                     <Button primary>Apply <VscOutput size={28} color='#000'/></Button>
                                 </NavBtnLink>
                             ) : (
-                                <NavBtnLink to='/apply'>
+                                <NavBtnLink to='/apply' onClick={() => scroll.scrollToTop()}>
                                     <Button fontBig primary>
                                     Apply <VscOutput size={28} color='#000'/>
                                     </Button>

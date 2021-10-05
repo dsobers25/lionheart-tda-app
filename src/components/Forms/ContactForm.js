@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledFormWrapper, StyledForm, FormArranger, FormRightItemHeader, FormRightText, FormRightCol, FormRightHeader, StyledInput, StyledTextArea, FormRight, StyledButton, Text, Label } from './Form.elements'
+import { StyledFormWrapper, StyledForm, FormArranger, FormRightItemHeader, FormRightText, FormRightCol, FormRightHeader, StyledInput, StyledTextArea, FormRight, StyledButton, Text, Label } from './Form.elements';
 import * as yup from 'yup';
 import { Formik } from 'formik';
 import { MdLocationOn } from 'react-icons/md';
@@ -73,9 +73,9 @@ const ContactForm = () => {
                   <MdLocationOn />
                   </IconContext.Provider>
                   <FormRightHeader>GET IN TOUCH</FormRightHeader>
-                  <FormRightItemHeader>Address: </FormRightItemHeader><FormRightText>320 0Aluma Valley Dr, Oklahoma City, OK 73121</FormRightText>
+                  <FormRightItemHeader>Address: </FormRightItemHeader><FormRightText>3200 Aluma Valley Dr, Oklahoma City, OK 73121</FormRightText>
                   <FormRightItemHeader>Phone: </FormRightItemHeader><FormRightText>(405) 254-5556</FormRightText>
-                  <FormRightItemHeader>Email: </FormRightItemHeader><FormRightText>support@lhtruckdrivingacademy.com</FormRightText>
+                  <FormRightItemHeader>Email: </FormRightItemHeader><FormRightText>support@lionhearttda.com</FormRightText>
                   </FormRightCol>
                 </FormRight>
                 </FormArranger>

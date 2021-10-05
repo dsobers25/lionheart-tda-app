@@ -2,6 +2,7 @@ import React from 'react';
 import { StyledButton, StyledJobFormWrapper } from '../../Form.elements'
 import * as yup from 'yup';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import {animateScroll as scroll} from 'react-scroll';
 
 const validationSchema = yup.object().shape({
     job_app: yup.object().shape({
@@ -13,9 +14,6 @@ const validationSchema = yup.object().shape({
 })
 
 const StepThree = ({ next, prev, data }) => {
-    // const [newData, setNewData] = useState(data);
-    // console.log(newData.personal_info);
-    // const [dob, setDob] = useState(new Date());
 
     const handleSubmit = (values) => {
         next(values);
@@ -171,7 +169,12 @@ const StepThree = ({ next, prev, data }) => {
                             </Field>
                             </div>
                         </div>                        
-                        <StyledButton type='button' onClick={() => prev(values)}>Back</StyledButton>
+                        <StyledButton type='button' onClick={() =>{
+                            scroll.scrollToTop();
+                            prev(values);
+                            
+                        }}
+                        >Back</StyledButton>
                         <StyledButton type='submit'>Next</StyledButton>
                     </Form>
                     </StyledJobFormWrapper>
